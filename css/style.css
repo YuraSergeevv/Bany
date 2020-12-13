@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 40px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 28px;
+}
+
+.header__inner {
+  margin-right: 170px;
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
+}
+
+.header__title {
+  color: #979797;
+}
+
+.header__phone {
+  padding-left: 40px;
+  position: relative;
+}
+
+.header__phone a {
+  color: #006cff;
+}
+
+.header__phone a::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/phone.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__list-item + .menu__list-item {
+  padding-left: 25px;
+}
+
+.menu__list-link {
+  color: #006cff;
+}
+
+.menu__consultation-btn {
+  color: #000000;
+  font-size: 20px;
+  padding: 5px 10px;
+  border: 1px solid #006cff;
+  border-radius: 10px;
+}
