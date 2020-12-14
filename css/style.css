@@ -131,7 +131,7 @@ body {
   bottom: 5px;
 }
 
-.menu {
+.header__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,7 +157,7 @@ body {
   color: #006cff;
 }
 
-.menu__consultation-btn {
+.header__consultation-btn {
   color: #000000;
   font-size: 20px;
   padding: 5px 10px;
@@ -199,6 +199,7 @@ body {
 
 .top__center {
   max-width: 805px;
+  margin-bottom: 40px;
 }
 
 .top__center-row {
@@ -219,4 +220,91 @@ body {
 
 .top__center-text:last-of-type {
   margin: 0;
+}
+
+.top__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top__input div input, .top__input div {
+  max-width: 345px;
+  width: 100%;
+  height: 65px;
+  font-size: 26px;
+  border-radius: 8px;
+  margin: 0 10px;
+}
+
+.top__input div input::-webkit-input-placeholder, .top__input div::-webkit-input-placeholder {
+  color: #767676;
+  font-size: 26px;
+}
+
+.top__input div input:-ms-input-placeholder, .top__input div:-ms-input-placeholder {
+  color: #767676;
+  font-size: 26px;
+}
+
+.top__input div input::-ms-input-placeholder, .top__input div::-ms-input-placeholder {
+  color: #767676;
+  font-size: 26px;
+}
+
+.top__input div input::placeholder, .top__input div::placeholder {
+  color: #767676;
+  font-size: 26px;
+}
+
+.top__input-name {
+  border: 1px solid   #c7c7c7;
+  padding-left: 20px;
+}
+
+.top__input-phone {
+  border: 1px solid   #c7c7c7;
+  padding-left: 60px;
+}
+
+.top__input-phone::-webkit-input-placeholder {
+  padding: 25%;
+}
+
+.top__input-phone:-ms-input-placeholder {
+  padding: 25%;
+}
+
+.top__input-phone::-ms-input-placeholder {
+  padding: 25%;
+}
+
+.top__input-phone::placeholder {
+  padding: 25%;
+}
+
+.phone {
+  position: relative;
+}
+
+.phone__code {
+  position: absolute;
+  top: 19px;
+  left: 40px;
+  font-size: 26px;
+  color: #000000;
+}
+
+.top__input-submit {
+  background-color: #fc5f20;
+  color: #ffffff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.top__input-submit:hover {
+  background-color: #ef4602;
 }

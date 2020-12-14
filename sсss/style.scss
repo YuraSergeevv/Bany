@@ -52,7 +52,7 @@ margin-right: 170px;
     }
 }
 
-.menu{
+.header__content{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,7 +70,7 @@ margin-right: 170px;
 .menu__list-link{
     color: #006cff;
 }
-.menu__consultation-btn{
+.header__consultation-btn{
     color: #000000;
     font-size: 20px;
     padding: 5px 10px;
@@ -104,21 +104,18 @@ margin-right: 170px;
     bottom:  40px;
 }
 .top__content-text-2{
-    bottom:-    40px;
+    bottom:-40px;
     left: 306px;
 }
 
 .top__center{
     max-width: 805px;
+    margin-bottom: 40px;
 }
 
 .top__center-row{
     display: flex;
     justify-content: space-between;
-}
-
-top__center-column{
-    
 }
 
 .top__center-text{
@@ -128,5 +125,55 @@ top__center-column{
     margin-bottom: 30px;
     &:last-of-type{
         margin: 0;
+    }
+}
+
+.top__input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top__input div input, .top__input div{
+    max-width: 345px;  
+    width: 100%;
+    height: 65px;
+    font-size: 26px;
+    border-radius: 8px;
+    margin: 0 10px;
+    &::placeholder{
+        color: #767676;
+        font-size: 26px;
+    }
+}
+
+.top__input-name{
+    border: 1px solid   #c7c7c7;
+    padding-left: 20px;
+}
+.top__input-phone{
+    border: 1px solid   #c7c7c7;
+    padding-left: 60px;
+    &::placeholder{
+        padding: 25%;
+    }
+}
+.phone{
+    position: relative;
+}
+.phone__code{
+    position:absolute;
+    top:19px;
+	left: 40px;
+	font-size:26px;
+	color:#000000;
+}
+
+
+.top__input-submit{
+    background-color: #fc5f20;
+    color: #ffffff;
+    transition: all .3s;
+    &:hover{
+        background-color:#ef4602;
     }
 }
