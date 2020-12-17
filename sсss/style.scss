@@ -228,7 +228,7 @@ margin-bottom: 60px;
 }
 
 .popular-projects__content-column-left{
-    flex-basis: 775px;
+    flex-basis: 760px;
     width: 100%;
     padding-right: 45px;
     border-right : 1px solid   #c7c7c7;
@@ -324,12 +324,12 @@ margin-bottom: 60px;
 }
 
 .slider__prev-arrow{
-    background-image: url(../images/l.png);
+    background-image: url(../images/angle-left-solid.svg);
     left: 5px;
 
 }
 .slider__next-arrow{
-   background-image: url(../images/r.png);
+   background-image: url(../images/angle-right-solid.svg);
    right: 5px;
 }
 
@@ -367,9 +367,112 @@ margin-bottom: 60px;
     font-size: 18px;
     margin-bottom: 10px;
 }
+///Select///
+.select {
+    position: relative;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+
+.select__header {
+	border: 1px solid #c7c7c7;
+	cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    height: 60px;   
+    padding-left: 10px;
+}
+.select__current {
+	font-size: 18px;
+	padding: 8px;
+}
+.select__icon {
+	align-items: center;
+	display: flex;
+	flex-shrink: 0;
+	justify-content: center;
+	height: 40px;
+	margin-left: auto;
+	text-align: center;
+	width: 40px;
+}
+
+.select__body {
+    border: 1px solid  #c7c7c7;
+    border-radius: 8px;
+    background-color: #ffffff;
+	border-top: 0;
+	display: none;
+	left: 0;
+	position: absolute;
+    right: 0;
+    z-index: 5;
+	top: 100%;
+}
+.select__item {
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px;
+}
+
+.select__item:hover {
+	background-color: #f2f2f2;
+}
+
+.is-active .select__body {
+    display: block;
+}
+/////polzynki//////
+
+.swithc__inner{
+
+}
+.switch{
+    margin-bottom: 30px;
+}
+
+.checkbox {
+    display: none;
+}
 
 
 
+.checkbox__label{
+    cursor: pointer;
+    position: relative;
+    padding-left: 75px;
+
+    &::after{
+        content: "";
+        position: absolute; 
+        width: 60px;
+        height: 30px;
+        left: 0;
+        top: 0;
+        border: 1px solid #c7c7c7;
+        border-radius: 15px;
+        
+    }
+
+    &::before{
+        content: "";
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        position: absolute;
+        left: 2px;
+        top: 1px;
+        background-color: #cecece;
+    }
+}
+    .checkbox:checked + .checkbox__label::before{
+        left: 30px;
+        top: 1px;
+        background-color: #fc5f20;
+    }
 
 
 //---------------------//LAST-PROJECTS//---------------------//
@@ -570,7 +673,7 @@ margin-bottom: 30px;
     margin-bottom: 40px;
     display: block;
     & div{
-        margin-bottom: 15px;
+        margin: 0 0 15px 0;
     }
     & .top__input-name{
         text-align: center;
