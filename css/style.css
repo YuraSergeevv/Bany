@@ -367,13 +367,6 @@ body {
   border-right: 1px solid   #c7c7c7;
 }
 
-.popular-projects__content-column-right {
-  -ms-flex-preferred-size: 360px;
-      flex-basis: 360px;
-  width: 100%;
-  margin-left: 30px;
-}
-
 .column-left__block {
   padding: 20px;
   border: 1px solid   #c7c7c7;
@@ -441,15 +434,17 @@ body {
 
 .slider__inner {
   position: relative;
+  overflow: hidden;
   margin: 0 -20px;
 }
 
 .slider {
   max-width: 760px;
+  margin: 0 -20px;
 }
 
 .slider__item-img {
-  padding: 0 0px;
+  padding: 0 20px;
   width: 380px;
   height: 280px;
   -o-object-fit: cover;
@@ -459,21 +454,58 @@ body {
 .slider__prev-arrow,
 .slider__next-arrow {
   position: absolute;
-  height: 4px;
-  width: 4px;
+  width: 10px;
+  height: 10px;
   padding: 10px;
   bottom: 50%;
   cursor: pointer;
+  background-size: contain;
 }
 
 .slider__prev-arrow {
-  background-image: url(../images/angle-left-solid.svg);
+  background-image: url(../images/l.png);
   left: 5px;
 }
 
 .slider__next-arrow {
-  background-image: url(../images/angle-right-solid.svg);
+  background-image: url(../images/r.png);
   right: 5px;
+}
+
+.popular-projects__content-column-right {
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+  width: 100%;
+  margin-left: 30px;
+}
+
+.popular-projects__content-column-right form div {
+  max-width: 300px;
+  height: 60px;
+}
+
+.popular-projects__content-column-right .top__input-submit {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #fc5f20;
+}
+
+.popular-projects__content-column-right .top__input-submit:hover {
+  background-color: #ffe7de;
+  color: #fc5f20;
+}
+
+.popular-projects__content-column-right .btn {
+  margin-top: 30px;
+}
+
+.column-right__title {
+  margin-bottom: 20px;
+}
+
+.column-right__text {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .last-projects__content {
@@ -501,6 +533,7 @@ body {
 .last-slider__inner {
   position: relative;
   margin-bottom: 70px;
+  overflow: hidden;
 }
 
 .last-slider {
@@ -526,6 +559,7 @@ body {
   padding: 10px;
   bottom: 50%;
   cursor: pointer;
+  background-size: contain;
 }
 
 .last-slider__prev-arrow {

@@ -165,6 +165,7 @@ margin-right: 170px;
     height: 100%;
     font-size: 26px;
     border-radius: 8px;
+  
     &::placeholder{
         color: #767676;
         font-size: 26px;        
@@ -175,6 +176,7 @@ margin-right: 170px;
 
 .top__input-name{
     border: 1px solid   #c7c7c7;
+   
     padding-left: 20px;
 }
 .top__input-phone{
@@ -233,11 +235,7 @@ margin-bottom: 60px;
   
 }
 
-.popular-projects__content-column-right{
-    flex-basis: 360px;
-    width: 100%;
-    margin-left: 30px;
-}
+
 
 .column-left__block{
     padding: 20px;
@@ -297,16 +295,17 @@ margin-bottom: 60px;
 }
 .slider__inner{
     position: relative;
-    margin: 0 -20px;
+    overflow: hidden;
+    margin: 0 -20px;   
 }
 
 .slider{
-    max-width: 760px;   
+    max-width: 760px;
+    margin: 0 -20px;   
     }
     
-
 .slider__item-img{
-    padding: 0 0px;   
+    padding: 0 20px;
     width: 380px;
     height: 280px;     
     object-fit: cover;
@@ -315,25 +314,64 @@ margin-bottom: 60px;
 
 .slider__prev-arrow,
 .slider__next-arrow{
-   position: absolute;
-    height: 4px;
-    width: 4px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
     padding: 10px;
     bottom: 50%;
     cursor: pointer;
+    background-size: contain;
 }
 
 .slider__prev-arrow{
-    background-image: url(../images/angle-left-solid.svg);
+    background-image: url(../images/l.png);
     left: 5px;
 
 }
 .slider__next-arrow{
-   background-image: url(../images/angle-right-solid.svg);
+   background-image: url(../images/r.png);
    right: 5px;
 }
 
 ///---right---///
+
+.popular-projects__content-column-right{
+    flex-basis: 300px;
+    width: 100%;
+    margin-left: 30px;
+    
+    & form div{
+        max-width: 300px;
+        height: 60px;
+    }
+
+    & .top__input-submit   {
+        background-color: #ffffff;
+        color: #000000;
+        border: 1px solid #fc5f20;
+        &:hover{
+            background-color: #ffe7de;
+            color: #fc5f20;
+        }
+    }
+    & .btn{
+        margin-top: 30px;
+    }
+}
+
+.column-right__title{
+    margin-bottom: 20px;
+}
+
+.column-right__text{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
 //---------------------//LAST-PROJECTS//---------------------//
 
 .last-projects__content{
@@ -361,6 +399,7 @@ margin-bottom: 60px;
  .last-slider__inner{
      position: relative;
      margin-bottom: 70px;
+     overflow: hidden;
  }
 
  .last-slider{
@@ -386,6 +425,7 @@ margin-bottom: 60px;
     padding: 10px;
     bottom: 50%;
     cursor: pointer;
+    background-size: contain;
  }
 
  .last-slider__prev-arrow{
