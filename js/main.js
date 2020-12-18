@@ -52,5 +52,9 @@ $( '.last-slider__inner' ).each(function(index) {
     
     select();
 
+    $('.menu__btn').on('click',function(){
+        $('.header__content').toggleClass('active')
+    })
+
 });
 

@@ -141,6 +141,10 @@ body {
   color: #4090ff;
 }
 
+.header__top-phone a:hover::before {
+  background-image: url(../images/phone_hover.png);
+}
+
 .header__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,6 +155,42 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.menu__btn {
+  width: 40px;
+  height: 30px;
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.menu__btn span {
+  display: block;
+  height: 2px;
+  width: 40px;
+  background-color: #000000;
+  position: absolute;
+  right: 10px;
+  top: 24px;
+}
+
+.menu__btn::after, .menu__btn::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #000000;
+  right: 10px;
+}
+
+.menu__btn::before {
+  top: 10px;
+}
+
+.menu__btn::after {
+  top: 38px;
 }
 
 .menu__list {
@@ -615,6 +655,10 @@ body {
   background-color: #cecece;
 }
 
+.checkbox__label:hover::before {
+  background-color: #939393;
+}
+
 .checkbox:checked + .checkbox__label::before {
   left: 30px;
   top: 1px;
@@ -840,6 +884,10 @@ body {
   color: #4090ff;
 }
 
+.footer__top-phone a:hover::before {
+  background-image: url(../images/phone_hover.png);
+}
+
 .vertical {
   margin-bottom: 40px;
   display: block;
@@ -858,4 +906,157 @@ body {
   color: #b8b8b8;
   text-decoration: underline;
   padding-bottom: 10px;
+}
+
+@media (max-width: 1100px) {
+  .header {
+    padding-top: 20px;
+    background: none;
+  }
+  .header__inner {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__top-phone {
+    padding-left: 25px;
+  }
+  .header__top-phone a::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+  }
+  .top__content-text-1,
+  .top__content-text-2 {
+    font-size: 24px;
+  }
+  .top__content-text-1 {
+    bottom: 40px;
+  }
+  .top__content-text-2 {
+    bottom: -20px;
+    left: 305px;
+  }
+  .header__inner {
+    font-size: 22px;
+  }
+  .menu__list-item + .menu__list-item {
+    padding-left: 20px;
+  }
+  .top__input-phone {
+    padding-left: 35px;
+  }
+  .top__input-phone::-webkit-input-placeholder {
+    padding: 20%;
+  }
+  .top__input-phone:-ms-input-placeholder {
+    padding: 20%;
+  }
+  .top__input-phone::-ms-input-placeholder {
+    padding: 20%;
+  }
+  .top__input-phone::placeholder {
+    padding: 20%;
+  }
+  .phone__code {
+    left: 7px;
+  }
+  .header__top {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu__btn {
+    display: block;
+  }
+  .header__content {
+    height: 0;
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-transition-duration: all 1s;
+            transition-duration: all 1s;
+  }
+  .menu__list {
+    opacity: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu__list-item + .menu__list-item {
+    padding: 10px   0;
+  }
+  .menu__list-item {
+    padding: 10px 0;
+  }
+  .active {
+    opacity: 1;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    width: 100%;
+    height: 90%;
+    z-index: 6;
+    background-color: #fff;
+    -webkit-transition-duration: all 1s;
+            transition-duration: all 1s;
+  }
+  .header__consultation {
+    margin-top: 10px;
+  }
+  .header__inner {
+    margin-right: 60px;
+  }
+  .top__content {
+    margin-bottom: 20;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .top__content-title {
+    max-width: 100%;
+    text-align: center;
+    font-size: 72px;
+    margin-bottom: 10px;
+  }
+  .top__content-text-1,
+  .top__content-text-2 {
+    max-width: 320px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    position: static;
+    display: block;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
 }
