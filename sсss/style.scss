@@ -805,7 +805,20 @@ margin-bottom: 30px;
     .header__top{
         margin-bottom: 15px;
     }
+    ///@
+    .last-slider__item-img{    
+    width: 445px;
+    height: 350px;
+ }
+
 }
+
+@media(max-width:900px){
+    .last-slider__item-img{    
+    width: 375px;
+    height: 280px;
+}
+}   
 
 @media(max-width:767px){
     .menu__btn{
@@ -920,8 +933,9 @@ margin-bottom: 30px;
     
 
     //
-    .popular-projects__title{
+    .title{
         font-size: 36px;
+        margin-bottom: 20px;
     }
     .column-left__block-title,
     .column-left__block-price{
@@ -936,6 +950,23 @@ margin-bottom: 30px;
         padding: 0;
     }
 
+
+    /////
+    .last-projects__subtitle{
+        font-size: 20px;    
+    }
+    .last-projects__text{
+        font-size: 18px;    
+    }
+    .last-slider__item-img{    
+    width: 450px;
+    height: 350 px;
+    margin: 0 auto  ;
+}
+    .last-projects__content,
+    .last-slider__inner{
+        margin-bottom: 20px;
+    }
 }
 @media(max-width:500px){
     .header__top-title{
@@ -958,6 +989,12 @@ margin-bottom: 30px;
    .top__center-text{
        font-size: 20px;
    }
+   ///
+   .title{
+       font-size: 24px;
+       text-align: center;
+   }
+
    .column-left__block-row-1,
    .column-left__block-row-2{
        flex-direction: column;
@@ -978,6 +1015,10 @@ margin-bottom: 30px;
        margin-bottom: 20px;
        font-size: 16px; 
    }
-
+   .last-slider__item-img{    
+    width: 320px;
+    height: 200 px;
+    margin: 0 auto  ;
+}
 
 }
