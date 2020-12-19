@@ -1211,7 +1211,7 @@ body {
   .position a::before {
     width: 15px;
     height: 15px;
-    top: 2  px;
+    top: 2px;
   }
   .plan__block-text {
     margin-left: 0px;
