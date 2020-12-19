@@ -929,7 +929,6 @@ margin-bottom: 30px;
         font-size: 72px;
         margin-bottom: 10px;
     }
-
     .top__content-text-1,
     .top__content-text-2{
         max-width: 320px;
@@ -946,6 +945,10 @@ margin-bottom: 30px;
     }
     .top__center-column{
         width: 100%;
+        margin-bottom: 20px;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
     }
     .top__input  {
         margin: 0 auto;
