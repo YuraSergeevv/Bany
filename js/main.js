@@ -7,6 +7,15 @@ $( '.slider__inner' ).each(function(index) {
         slidesToScroll: 2,  
         prevArrow:$('.slider__prev-arrow',$(this)),
         nextArrow:$('.slider__next-arrow',$(this)),
+        responsive:[{
+            breakpoint: 769,
+            settings:
+            {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }
+]
     })
 });
 
