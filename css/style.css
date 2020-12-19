@@ -1147,7 +1147,7 @@ body {
   }
   .title {
     font-size: 36px;
-    margin-top: 30  px;
+    margin-top: 30px;
     margin-bottom: 20px;
   }
   .column-left__block-title,
@@ -1247,6 +1247,7 @@ body {
   }
   .title {
     font-size: 24px;
+    text-align: center;
   }
   .column-left__block-row-1,
   .column-left__block-row-2 {
