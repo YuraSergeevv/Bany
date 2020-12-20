@@ -6,7 +6,7 @@ $( '.slider__inner' ).each(function(index) {
         slidesToShow: 2,
         slidesToScroll: 1,  
         prevArrow:$('.slider__prev-arrow',$(this)),
-        nextArrow:$('.slider__next-arrow',$(this)),
+        nextArrow:$('.slider__next-arrow',$(this)), 
         responsive:[{
             breakpoint: 769,
             settings:
@@ -21,7 +21,7 @@ $( '.slider__inner' ).each(function(index) {
 
 $( '.last-slider__inner' ).each(function(index) {
     $('.last-slider', $(this)).slick({
-        slidesToShow: 2     ,
+        slidesToShow: 2   ,
         slidesToScroll: 1,  
         prevArrow:$('.last-slider__prev-arrow',$(this)),
         nextArrow:$('.last-slider__next-arrow',$(this)),
