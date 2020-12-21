@@ -23,6 +23,7 @@ $( '.last-slider__inner' ).each(function(index) {
     $('.last-slider', $(this)).slick({
         slidesToShow: 3    ,
         slidesToScroll: 1,  
+        infinite: false,
         prevArrow:$('.last-slider__prev-arrow',$(this)),
         nextArrow:$('.last-slider__next-arrow',$(this)),
         responsive:[{

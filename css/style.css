@@ -498,8 +498,8 @@ body {
   bottom: 50%;
   cursor: pointer;
   background-size: contain;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
   background-size: contain;
 }
 
@@ -696,8 +696,8 @@ body {
   left: 2px;
   top: 1px;
   background-color: #cecece;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .checkbox__label:hover::before {
@@ -775,7 +775,11 @@ body {
 
 .last-slider__next-arrow {
   background-image: url(../images/angle-right-solid.svg);
-  right: 5px;
+  right: -100px;
+}
+
+.slick-disabled {
+  display: none !important;
 }
 
 .info {

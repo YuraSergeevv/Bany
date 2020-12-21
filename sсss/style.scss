@@ -357,7 +357,7 @@ margin-bottom: 60px;
     bottom: 50%;
     cursor: pointer;
     background-size: contain;
-    transition: all .3s;
+    transition: all .5s;
     background-size: contain; 
     &::before{
         transition:  all .3s;
@@ -535,7 +535,7 @@ margin-bottom: 60px;
         left: 2px;
         top: 1px;
         background-color: #cecece;
-        transition: all .5s;
+        transition: all 0.5s;
     }
 }
 
@@ -595,6 +595,7 @@ margin-bottom: 60px;
         height: 440px;
  }
 
+
  .slick-active + .slick-active + .slick-active {
     opacity: 0.3;
  }
@@ -617,8 +618,11 @@ margin-bottom: 60px;
 }
 .last-slider__next-arrow{
     background-image: url(../images/angle-right-solid.svg);
-   right: 5px;
+    right: -100px;
 }
+.slick-disabled {
+    display: none !important;
+  }
 
 /////////
 .info{
