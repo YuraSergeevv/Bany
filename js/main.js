@@ -21,7 +21,7 @@ $( '.slider__inner' ).each(function(index) {
 
 $( '.last-slider__inner' ).each(function(index) {
     $('.last-slider', $(this)).slick({
-        slidesToShow: 2   ,
+        slidesToShow: 3    ,
         slidesToScroll: 1,  
         prevArrow:$('.last-slider__prev-arrow',$(this)),
         nextArrow:$('.last-slider__next-arrow',$(this)),
@@ -36,6 +36,8 @@ $( '.last-slider__inner' ).each(function(index) {
 ]
     })
 });
+
+
 
     $('.top__input-phone').mask('(000)000-00-00');  
 
