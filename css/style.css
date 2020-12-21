@@ -73,6 +73,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-box-sizing: border-box;
@@ -80,8 +86,6 @@ body {
   font-size: 24px;
   overflow-x: hidden;
   min-width: 320px;
-  max-width: 100%;
-  width: 100%;
 }
 
 .container {
@@ -1236,7 +1240,8 @@ body {
   }
   .top__input {
     margin: 0 auto;
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
     display: block;
   }
   .top__input div {

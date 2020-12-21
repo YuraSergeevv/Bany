@@ -21,7 +21,7 @@ $( '.slider__inner' ).each(function(index) {
 
 $( '.last-slider__inner' ).each(function(index) {
     $('.last-slider', $(this)).slick({
-        slidesToShow: 3    ,
+        slidesToShow: 3,
         slidesToScroll: 1,  
         infinite: false,
         prevArrow:$('.last-slider__prev-arrow',$(this)),

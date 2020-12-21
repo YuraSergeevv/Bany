@@ -1,13 +1,15 @@
 @import "nullstyle.scss";
-
+html{
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     font-size: 24px;    
     overflow-x: hidden;
     min-width: 320px;
-    max-width: 100%;
-    width: 100%;
 }
 
 .container{
@@ -579,7 +581,8 @@ margin-bottom: 60px;
  //Last-slider  
  .last-slider__inner{
      position: relative;
-     margin-bottom: 70px;   
+     margin-bottom: 70px;  
+    
  }
 
  .last-slider{
@@ -1038,7 +1041,8 @@ margin-bottom: 30px;
     }
     .top__input  {
         margin: 0 auto;
-        width: 320px;
+       max-width: 320px;
+       width: 100%;
         display: block;
         & div {
             width: 300px;
