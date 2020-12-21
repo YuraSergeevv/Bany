@@ -27,11 +27,20 @@ $( '.last-slider__inner' ).each(function(index) {
         prevArrow:$('.last-slider__prev-arrow',$(this)),
         nextArrow:$('.last-slider__next-arrow',$(this)),
         responsive:[{
+            breakpoint: 1101,
+            settings:
+            {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
+        {
             breakpoint: 769,
             settings:
             {
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                infinite: true,
             }
         }
 ]
