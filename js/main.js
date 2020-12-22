@@ -84,6 +84,7 @@ $( '.last-slider__inner' ).each(function(index) {
 
     $('.menu__btn').on('click',function(){
         $('.header__content').toggleClass('active')
+        $('.menu__btn').toggleClass('pressed')
     })
 
 });
