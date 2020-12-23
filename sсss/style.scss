@@ -19,11 +19,11 @@ body{
 //---------------------//HEADER//---------------------//
 .header{
     position: relative;   
-    padding-top: 40px;  
+    padding-top: 10px;  
     font-size: 28px; 
     background:url(../images/bg-tree.png) top right no-repeat,
-               url(../images/bg-house.png) bottom right no-repeat;
-           
+               url(../images/bg-house.png) bottom right no-repeat;  
+    margin-bottom: 80px;
 }
 
 .header__inner{
@@ -34,7 +34,7 @@ margin-right: 170px;
     display: flex;
     justify-content: space-between;
     align-items: center ; 
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     
   
 }
@@ -45,14 +45,15 @@ margin-right: 170px;
 .header__top-phone{
     padding-left: 40px;
     position: relative;
-    transition: all .5s;
     a{
+        transition: all .5s;
         color: #006cff;
         &::before{
+            transition: all .5s;
             content: "";
             width: 18px;
             height: 18px;
-            background-image: url(../images/phone.png);
+            background-image: url(../images/phone-call.svg);
             background-repeat: no-repeat;
             background-position: left center;
             background-size: contain;
@@ -61,9 +62,11 @@ margin-right: 170px;
             bottom: 5px;
         }
         &:hover{
+            transition: all .5s;
             color: #4090ff;
             &::before{
-                background-image: url(../images/phone_hover.png);
+                transition: all .5s;
+                background-image: url(../images/phone-call-hover.svg);
             }
         }   
     }
@@ -171,13 +174,13 @@ margin-right: 170px;
     bottom:  40px;
 }
 .top__content-text-2{
-    bottom:-40px;
+    bottom:-39px;
     left: 306px;
 }
 
 .top__center{
     max-width: 805px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .top__center-row{
@@ -197,7 +200,6 @@ margin-right: 170px;
 
 .top__input{
     display: flex;
-    margin-bottom: 80px;
 }   
 
 .top__input div {
@@ -399,7 +401,7 @@ margin-bottom: 60px;
    &:hover{
     background-image: url(../images/angle-right-solid-hover.svg);
             &::before{
-            opacity: 0;
+            opacity: 0.7;
             }
     }   
     &::before{
@@ -524,6 +526,8 @@ margin-bottom: 60px;
     cursor: pointer;
     position: relative;
     padding-left: 75px;
+    color: #ababab;
+    transition: 0.5s all ;
 
     &::after{
         content: "";
@@ -553,6 +557,9 @@ margin-bottom: 60px;
     .checkbox__label:hover::before{
     background-color: #939393;
 }
+.checkbox:checked + .checkbox__label{
+ color:#000000;
+}
 
     .checkbox:checked + .checkbox__label::before{
         left: 30px;
@@ -581,6 +588,7 @@ margin-bottom: 60px;
  }
  .last-projects__text{
      font-size: 24px;
+     line-height: 1.2;
      margin-bottom: 20px;
  }
 
@@ -670,6 +678,7 @@ margin-bottom: 30px;
 .info__text{
     font-size: 24px;
     margin-bottom: 25px;
+    line-height: 1.2;
 }
 
 ////
@@ -879,7 +888,7 @@ margin-bottom: 30px;
         bottom: 40px;
     }
     .top__content-text-2{
-        bottom:-20px;
+        bottom:-19px;
         left: 305px;
     }
     .header__inner{
@@ -1027,10 +1036,10 @@ margin-bottom: 30px;
             overflow: hidden;
             &::before{
                 content: "";
-                width: 18px;
-                height: 18px;
-                left: 0px;
-                top: 0px ; 
+                width: 25px;
+                height: 25px;
+                left: -10px;
+                top: -8px ; 
             }
         }
     }
@@ -1208,10 +1217,8 @@ margin-bottom: 30px;
     }
     .header__top-phone{
         a{
-           
             &::before{
-                left: 0px;
-                top: -10px; 
+                top: -15px ; 
             }
         }   
     }
