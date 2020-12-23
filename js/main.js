@@ -87,5 +87,10 @@ $( '.last-slider__inner' ).each(function(index) {
         $('.menu__btn').toggleClass('pressed')
     })
 
+    $('.menu__list-link').on('click',function(){
+        $('.header__content').removeClass('active')
+        $('.menu__btn').removeClass('pressed')
+    })
+
 });
 
