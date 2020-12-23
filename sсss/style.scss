@@ -751,16 +751,18 @@ margin-bottom: 30px;
 .footer__top-phone{
     padding-left: 50px;
     position: relative;
-    transition: all .3s;
+    transition: all .5s;
     margin-bottom: 40px;
     a{
+        transition: all .5s;
         font-size: 45px;
         color: #006cff;
         &::before{
+            transition: all .5s;
             content: "";
             width: 25px;
             height: 25px;
-            background-image: url(../images/phone.png);
+            background-image: url(../images/phone-call.svg);
             background-repeat: no-repeat;
             background-position: left center;
             background-size: contain;
@@ -769,9 +771,11 @@ margin-bottom: 30px;
             bottom: 5px;
         }
         &:hover{
+            transition: all .5s;
             color: #4090ff;
             &::before{
-                background-image: url(../images/phone_hover.png);
+                transition: all .5s;
+                background-image: url(../images/phone-call-hover.svg);
             }
         }   
     }
