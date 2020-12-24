@@ -49,7 +49,7 @@ $( '.last-slider__inner' ).each(function(index) {
 
 
 
-    $('.top__input-phone').mask('(000)000-00-00');  
+   // $('.top__input-phone').mask('(000)000-00-00');  
 
 
     let select = function () {
@@ -94,18 +94,19 @@ $( '.last-slider__inner' ).each(function(index) {
 
     //Плавная прокрутка к якорю
     const anchors = document.querySelectorAll('a[href*="#"]')
+
     for (let anchor of anchors) {
-    anchor.addEventListener('click', function (e) {
-    e.preventDefault()
-    
-    const blockID = anchor.getAttribute('href').substr(1)
-    
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-    })
-}
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault()
+        
+        const blockID = anchor.getAttribute('href').substr(1)
+        
+        document.getElementById(blockID).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
+      })
+    }
 
 });
 
