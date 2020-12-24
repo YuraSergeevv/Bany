@@ -49,7 +49,7 @@ $( '.last-slider__inner' ).each(function(index) {
 
 
 
-   // $('.top__input-phone').mask('(000)000-00-00');  
+   $('.top__input-phone').mask('(000)000-00-00');  
 
 
     let select = function () {
