@@ -906,7 +906,8 @@ margin-bottom: 30px;
     .top__input-phone{
         padding-left: 35px;
         &::placeholder{
-            padding: 20%;
+            padding-left: 20%;
+            top:0;
         }
     }
     .phone__code{
@@ -1206,6 +1207,7 @@ margin-bottom: 30px;
     }
     .top__input-phone{
         padding-left: 60px;
+        top: 0;
     }
     .phone__code{
         font-size: 20px;

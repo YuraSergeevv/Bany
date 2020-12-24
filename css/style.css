@@ -1094,16 +1094,20 @@ body {
     padding-left: 35px;
   }
   .top__input-phone::-webkit-input-placeholder {
-    padding: 20%;
+    padding-left: 20%;
+    top: 0;
   }
   .top__input-phone:-ms-input-placeholder {
-    padding: 20%;
+    padding-left: 20%;
+    top: 0;
   }
   .top__input-phone::-ms-input-placeholder {
-    padding: 20%;
+    padding-left: 20%;
+    top: 0;
   }
   .top__input-phone::placeholder {
-    padding: 20%;
+    padding-left: 20%;
+    top: 0;
   }
   .phone__code {
     left: 7px;
@@ -1412,6 +1416,7 @@ body {
   }
   .top__input-phone {
     padding-left: 60px;
+    top: 0;
   }
   .phone__code {
     font-size: 20px;
