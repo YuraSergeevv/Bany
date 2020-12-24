@@ -373,6 +373,10 @@ body {
   padding-left: 0;
 }
 
+.phone {
+  position: static;
+}
+
 .phone__code {
   position: absolute;
   top: 20px;
