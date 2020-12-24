@@ -93,20 +93,12 @@ $( '.last-slider__inner' ).each(function(index) {
     })
 
     //Плавная прокрутка к якорю
-    const anchors = document.querySelectorAll('a[href*="#"]')
-
-    for (let anchor of anchors) {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault()
-        
-        const blockID = anchor.getAttribute('href').substr(1)
-        
-        document.getElementById(blockID).scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        })
-      })
-    }
+        $('a[href^="#"]').click(function(){
+        var el = $(this).attr('href');
+        $('body').animate({
+        scrollTop: $(el).offset().top}, 1000);
+        return false;
+        });
 
 });
 
