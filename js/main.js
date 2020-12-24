@@ -96,9 +96,8 @@ $( '.last-slider__inner' ).each(function(index) {
         $('a[href^="#"]').click(function(){
         var el = $(this).attr('href');
         $('body').animate({
-        scrollTop: $(el).offset().top}, 1000);
+        scrollTop: $(el).offset().top}, 999);
         return false;
         });
-
 });
 
