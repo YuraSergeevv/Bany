@@ -357,6 +357,22 @@ body {
   padding-left: 60px;
 }
 
+.top__input-phone::-webkit-input-placeholder {
+  padding-left: 0;
+}
+
+.top__input-phone:-ms-input-placeholder {
+  padding-left: 0;
+}
+
+.top__input-phone::-ms-input-placeholder {
+  padding-left: 0;
+}
+
+.top__input-phone::placeholder {
+  padding-left: 0;
+}
+
 .phone {
   position: relative;
 }
